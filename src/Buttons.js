@@ -14,7 +14,7 @@ const Buttons = (props) => {
           </button>
           <button
             className="homeButtons__fieldGoal"
-            onClick={() => changeHome(3)}
+            onClick={() => props.changeScore("Home", 3)}
           >
             Home Field Goal
           </button>
