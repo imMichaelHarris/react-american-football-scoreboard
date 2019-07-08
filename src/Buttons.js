@@ -1,6 +1,6 @@
 import React from "react";
 
-const Buttons = () => {
+const Buttons = (props) => {
   return (
     <>
       <section className="buttons">
@@ -8,7 +8,7 @@ const Buttons = () => {
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button
             className="homeButtons__touchdown"
-            onClick={() => changeHome(7)}
+            onClick={() => props.changeScore("Home", 7)}
           >
             Home Touchdown
           </button>
