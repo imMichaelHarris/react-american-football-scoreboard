@@ -18,6 +18,8 @@ function App() {
     team === "Home"
       ? setHomeScore(homeScore + points)
       : setAwayScore(awayScore + points);
+
+  const changeQuarter = (number) => setQuarter(quarter[number + 1])
   return (
     <div className="container">
       <Scoreboard homeScore={homeScore} awayScore={awayScore} />
