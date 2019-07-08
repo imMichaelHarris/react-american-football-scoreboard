@@ -28,7 +28,7 @@ const Buttons = (props) => {
           </button>
           <button
             className="awayButtons__fieldGoal"
-            onClick={() => changeAway(3)}
+            onClick={() => props.changeScore("Away", 3)}
           >
             Away Field Goal
           </button>
