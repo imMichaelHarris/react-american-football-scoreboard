@@ -22,7 +22,7 @@ function App() {
   const changeQuarter = (number) => setQuarter(quarter[number + 1])
   return (
     <div className="container">
-      <Scoreboard homeScore={homeScore} awayScore={awayScore} />
+      <Scoreboard homeScore={homeScore} awayScore={awayScore} quarter={quarter}/>
       <Buttons changeScore={changeScore} changeQuarter={changeQuarter} />
     </div>
   );
