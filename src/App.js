@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="container">
       <Scoreboard homeScore={homeScore} awayScore={awayScore} />
-      <Buttons changeScore={changeScore} />
+      <Buttons changeScore={changeScore} changeQuarter={changeQuarter} />
     </div>
   );
 }
