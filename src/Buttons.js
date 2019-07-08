@@ -2,7 +2,8 @@ import React from "react";
 
 const Buttons = (props) => {
   return (
-    <>
+    <div className="buttons">
+    <button>Change Quarter</button>
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
@@ -34,7 +35,7 @@ const Buttons = (props) => {
           </button>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
