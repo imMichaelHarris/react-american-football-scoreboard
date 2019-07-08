@@ -13,7 +13,9 @@ function App() {
   const changeHome = points => setHomeScore(homeScore + points);
   const changeAway = points => setAwayScore(awayScore + points);
   const changeScore = (team, points) =>
-    team === "Home" ? setHomeScore(points) : setAwayScore(points);
+    team === "Home"
+      ? setHomeScore(homeScore + points)
+      : setAwayScore(awayScore + points);
   return (
     <div className="container">
       <Scoreboard homeScore={homeScore} awayScore={awayScore} />
