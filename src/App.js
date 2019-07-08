@@ -36,7 +36,7 @@ function App() {
           <button className="homeButtons__fieldGoal" onClick={() => changeHome(3)}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown">Away Touchdown</button>
+          <button className="awayButtons__touchdown" onClick={() => changeAway(6)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal">Away Field Goal</button>
         </div>
       </section>
