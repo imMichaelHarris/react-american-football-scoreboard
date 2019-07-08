@@ -22,7 +22,7 @@ const Buttons = (props) => {
         <div className="awayButtons">
           <button
             className="awayButtons__touchdown"
-            onClick={() => changeAway(7)}
+            onClick={() => props.changeScore("Away", 7)}
           >
             Away Touchdown
           </button>
