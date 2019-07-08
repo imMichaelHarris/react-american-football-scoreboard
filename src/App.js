@@ -10,8 +10,9 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
-  const changeHome = points => setHomeScore(homeScore + points);
-  const changeAway = points => setAwayScore(awayScore + points);
+  // const changeHome = points => setHomeScore(homeScore + points);
+  // const changeAway = points => setAwayScore(awayScore + points);
+  
   const changeScore = (team, points) =>
     team === "Home"
       ? setHomeScore(homeScore + points)
