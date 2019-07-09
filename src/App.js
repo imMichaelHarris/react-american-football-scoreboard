@@ -35,7 +35,7 @@ const changeDown = () => {
 };
   return (
     <div className="container">
-      <Scoreboard scores={scores} quarter={quarter} />
+      <Scoreboard scores={scores} quarter={quarter} down={down}/>
       <Buttons changeScore={changeScore} changeQuarter={changeQuarter} changeDown={changeDown}/>
     </div>
   );
