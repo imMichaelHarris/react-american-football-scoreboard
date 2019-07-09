@@ -24,17 +24,19 @@ function App() {
     }
     setQuarter(quarter + 1);
   };
-  const changeDown = () => {
-    if(down === 4){
-      down = 1
-    }
-    setDown(down + 1)
-  }
+//? Is it better to pass the hook down as props or pass the change handler?
+//Probably makes more sense to have the changehanlder because you need to pass something in the state function
 
+const changeDown = () => {
+  if(down === 4){
+    down = 1
+  }
+  setDown(quarter + 1);
+};
   return (
     <div className="container">
       <Scoreboard scores={scores} quarter={quarter} />
-      <Buttons changeScore={changeScore} changeQuarter={changeQuarter} setDown={setDown}/>
+      <Buttons changeScore={changeScore} changeQuarter={changeQuarter} changeDown={changeDown}/>
     </div>
   );
 }
