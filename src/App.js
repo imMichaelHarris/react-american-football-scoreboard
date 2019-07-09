@@ -18,6 +18,14 @@ function App() {
       ? setScore({ ...scores, home: scores.home + points })
       : setScore({ ...scores, away: scores.away + points });
 
+      const downOrQuarter = (type) => {
+        type === "quarter" ? type = quarter : type = down;
+        if(type === 4){
+          type = 0
+        }
+        
+      }
+
   const changeQuarter = () => {
     if(quarter === 4){
       quarter = 0
