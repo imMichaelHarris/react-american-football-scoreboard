@@ -2,7 +2,6 @@ import React from "react";
 import BottomRow from "./BottomRow";
 
 const Scoreboard = (props) => {
-    console.log(props)
   return (
     <section className="scoreboard">
       <div className="topRow">
