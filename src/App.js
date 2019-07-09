@@ -11,6 +11,7 @@ function App() {
     away: 0
   });
   let [quarter, setQuarter] = useState(1);
+  let [down, setDown] = useState(1);
 
   const changeScore = (team, points) =>
     team === "Home"
@@ -27,7 +28,7 @@ function App() {
   return (
     <div className="container">
       <Scoreboard scores={scores} quarter={quarter} />
-      <Buttons changeScore={changeScore} changeQuarter={changeQuarter} />
+      <Buttons changeScore={changeScore} changeQuarter={changeQuarter} setDown={setDown}/>
     </div>
   );
 }
