@@ -19,7 +19,7 @@ const Scoreboard = (props) => {
           <div className="away__score">{props.scores.away}</div>
         </div>
       </div>
-      <BottomRow quarter={props.quarter}/>
+      <BottomRow quarter={props.quarter} down={props.down}/>
     </section>
   );
 };
