@@ -3,7 +3,7 @@ import React from "react";
 const Buttons = (props) => {
   return (
     <div >
-    <button className="quarter-button" onClick={() => props.changeQuarter()}>Change Down</button>
+    <button className="quarter-button" onClick={() => props.changeDown()}>Change Down</button>
     
     <button className="quarter-button" onClick={() => props.changeQuarter()}>Change Quarter</button>
       <section className="buttons">
