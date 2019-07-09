@@ -20,7 +20,7 @@ function App() {
 
   const changeQuarter = () => {
     if(quarter === 4){
-      quarter = 1
+      quarter = 0
     }
     setQuarter(quarter + 1);
   };
@@ -29,9 +29,9 @@ function App() {
 
 const changeDown = () => {
   if(down === 4){
-    down = 1
+    down = 0
   }
-  setDown(quarter + 1);
+  setDown(down + 1);
 };
   return (
     <div className="container">
