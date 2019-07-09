@@ -3,7 +3,7 @@ import React from "react";
 const Buttons = (props) => {
   return (
     <div >
-    <button className="quarter-button" onClick={() => props.changeQuarter()}>Change Quarter</button>
+    <button className="quarter-button" onClick={() => console.log(props.changeQuarter())}>Change Quarter</button>
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
