@@ -20,8 +20,8 @@ function App() {
 
   const changeScore = (team, points) =>
     team === "Home"
-      ? setScore(scores.home + points)
-      : setScore(scores.away + points);
+      ? setScore({...scores, home: scores.home + points})
+      : setScore({ ...scores, away: scores.away + points});
 
   const changeQuarter = () => setQuarter(quarter + 1);
   return (
