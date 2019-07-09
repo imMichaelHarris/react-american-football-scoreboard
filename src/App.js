@@ -10,14 +10,19 @@ function App() {
     home: 0,
     away: 0
   });
-  const [quarter, setQuarter] = useState(1);
+  let [quarter, setQuarter] = useState(1);
 
   const changeScore = (team, points) =>
     team === "Home"
       ? setScore({ ...scores, home: scores.home + points })
       : setScore({ ...scores, away: scores.away + points });
 
-  const changeQuarter = () => setQuarter(quarter + 1);
+  const changeQuarter = () => {
+    if(quarter === 4){
+      quarter = 0
+    }
+    setQuarter(quarter + 1);
+  };
 
   return (
     <div className="container">
